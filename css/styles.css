@@ -628,6 +628,7 @@ button {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -640,4 +641,12 @@ button {
   height: 581px;
 
   background-color: var(--color-text-white);
+}
+
+.btn-close {
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 0;
 }
