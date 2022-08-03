@@ -133,7 +133,6 @@ button {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  align-items: center;
   transition: color var(--transformation-property);
 }
 .contact-list-icon {
@@ -591,13 +590,12 @@ button {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--color-text-white);
-  font-size: 14px;
-  text-align: center;
-  padding-top: 27px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
   line-height: 1.14;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-thumb {
@@ -614,7 +612,7 @@ button {
   height: 100%;
   margin: 0;
   padding: 63px 24px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 
   transform: translate(0, 100%);
   transition: transform 500ms linear;
@@ -639,6 +637,10 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transformation-property), visibility var(--transformation-property);
 }
 
 .backdrop.is-hidden {
